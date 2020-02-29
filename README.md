@@ -1,5 +1,12 @@
 # FCN
 
+This code just for studying and remindering Tensorflow 1.
+
+Make Fully Convolutional Network for more kindly, but not really good performance
+I don't know why(Maybe batchsize or learning rate etc..) .
+
+so I will find it Later, and modifying it
+
 ## Environment
 
       python =3.6.8
