@@ -1,0 +1,1 @@
+train.py --train_dir D:\DeepLearing\Data\VOC2012\Train\JPEGImages --train_gt_dir D:\DeepLearing\Data\VOC2012\Train\GroundTruth --test_dir D:\DeepLearing\Data\VOC2012\Test\GroundTruth --test_gt_dir D:\DeepLearing\Data\VOC2012\Test\GroundTruth
