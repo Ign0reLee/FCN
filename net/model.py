@@ -38,9 +38,11 @@ class FCN():
         h = self.conv2d(h, self.n_class, 1, 1, "SAME", "Convolutional")
 
         h = self.upconv2d(h, x_32.get_shape().as_list()[-1], 4, 2, "upconv1")
+        x_32 = self.relu(self.conv2d(x_32,self.n_class,1,1,"SAME","AddConv1"))
         h = tf.add(h, x_32)
 
         h = self.upconv2d(h, x_16.get_shape().as_list()[-1], 4, 2, "upconv2")
+        x_16 = self.relu(self.conv2d(x_16,self.n_class,1,1,"SAME","AddConv2"))
         h = tf.add(h, x_16)
 
         h = self.upconv2d(h, self.n_class, 16, 8, "last_out")
